@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <canvas></canvas>
+
+    <div id="nick" class="form">
+      <form>
+        <h1>Space Battle</h1>
+        <input
+          type="text"
+          name="nick"
+          id="nick"
+          placeholder="Insert a Nickname"
+        />
+        <button type="submit">Play</button>
+      </form>
+    </div>
+
+    <section>
+      <div id="gameOver">
+        <h1>Has perdido...</h1>
+        <button id="retry">Reintentar</button>
+      </div>
+    </section>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
